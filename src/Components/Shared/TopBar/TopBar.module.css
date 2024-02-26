@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+.main {
+  width: 97%;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.left h1 {
+  font-family: "Black Han Sans", sans-serif;
+  color: #cdd0d6;
+  font-size: 1.5rem;
+}
+
+.left img {
+  aspect-ratio: 1/1;
+  width: 2.4rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.search input {
+  border: none;
+  background: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 33px;
+  color: #787f8c;
+  outline: none;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.search {
+  background-color: #1c2536;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 15rem;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchButton img {
+  aspect-ratio: 1/1;
+  width: 1.1rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLinks img {
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.right p {
+  color: #b6bfd0;
+  font-size: 0.9rem;
+}
+
+/* for mobile */
+@media (max-width: 480px) {
+  .main {
+    margin-top: 0.7rem;
+  }
+
+  .left h1 {
+    font-size: 12px;
+  }
+
+  .left img {
+    width: 1.2rem;
+  }
+
+  .left {
+    gap: 1rem;
+  }
+
+  .search {
+    width: 8rem;
+    height: 5vh;
+    border-radius: 3px;
+  }
+
+  .searchButton img {
+    width: 1.1rem;
+  }
+
+  .branding {
+    margin: 0 0 0.4rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .right {
+    gap: 0.5rem;
+    margin-left: 3px;
+  }
+
+  .right p {
+    font-size: 0.4rem;
+  }
+
+  .navLinks {
+    gap: 0.3rem;
+  }
+
+  .navLinks img {
+    width: 15px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  .main {
+    margin-top: 1rem;
+  }
+
+  .left h1 {
+    font-size: 1.3rem;
+  }
+
+  .search {
+    width: 16rem;
+  }
+
+  .right {
+    gap: 1rem;
+    margin-left: 5px;
+  }
+
+  .right p {
+    font-size: 0.6rem;
+  }
+  
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}

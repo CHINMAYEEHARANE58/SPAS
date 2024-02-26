@@ -1,0 +1,110 @@
+/* .leftDiv {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  
+  
+  .rightDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .main {
+    display: flex;
+  }
+  
+  .nav {
+    width: 83%;
+    height: 95%;
+    background-color: #1c2536;
+    border-radius: 10px;
+  }
+  
+  .contentHeader > :nth-child(1) {
+    color: #cdd0d6;
+    /* color: #6c9f96; */
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .contentHeader > :nth-child(2) {
+    color: #6c9f96;
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  
+  .contentHeader{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: .6rem;
+  }
+  
+  .hamburger{
+    padding-right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    left: 2rem;
+    top: 3.1rem;
+    z-index: 3;
+  }
+  
+  /* for mobile */
+  @media (max-width: 480px) {
+    .contentHeader > :nth-child(1) {
+      font-size: 0.9rem;
+    }
+    
+    .contentHeader > :nth-child(2) {
+      font-size: 0.8rem;
+    }
+
+    .contentHeader{
+      width: 70vw;
+    }
+    
+    .hamburger{
+      left: 0.5rem;
+      top: 1rem;
+    } 
+
+    .rightDiv {
+      width: 60vw;
+      height: 95vh;
+    }
+  }
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  .contentHeader > :nth-child(1) {
+    font-size: 1rem;
+  }
+  
+  .contentHeader > :nth-child(2) {
+    font-size: 0.8rem;
+  }
+
+  .hamburger{
+    left: 0.5rem;
+    top: 1rem;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
